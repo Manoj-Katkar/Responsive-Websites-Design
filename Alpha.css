@@ -1,0 +1,882 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Source Sans 3", sans-serif;
+    background-image: url(./images/background\ banner.jpg);
+    background-repeat: no-repeat;
+    /* ! it will cover the background image to that particular section  */
+    background-size: 100%;
+    background-color: rgb(245,245,245);
+    /* ! it cover the background image to the hole body  */
+    /* background-size: cover; */
+    
+}
+nav{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 1rem;
+}
+
+#left{
+    /* background-color: yellow; */
+    width: 16%;
+}
+
+#right{
+    /* background-color: aqua; */
+    width: 25%;
+    font-size: 1.2rem;
+}
+/* Decendant Selector */
+#right a{
+    text-decoration: none;
+    color: white;
+}
+
+#left > h1{
+    color: rgb(229,225,228);
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin: 0px;
+    /* padding: 1rem 1.5rem; */
+}
+
+
+#left > h1 > span{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+
+#right #container{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#container > li > a{
+    color: white;
+    display: block;
+    padding: 0.4rem 1rem;
+}
+
+#container button{
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.3rem 1rem;
+    border: 3px solid rgb(224, 218, 218);
+    border-radius: 6px;
+    /* * to get the what the background color is there show that only  */
+    background-color: transparent;
+}
+
+#drop #menu{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    width: 180%;
+    border: 2px solid rgba(170, 168, 168, 0.835);
+    border-radius: 6px;
+    display: none;
+}
+
+#menu li>a{
+    color: gray;
+    display: block;
+    border-bottom: 1px solid rgba(170, 168, 168, 0.835);
+    padding: 0.5rem;
+}
+
+#menu li > a:hover{
+    background-color: rgba(255, 0, 0, 0.384);
+    color: white;
+}
+
+#drop{
+    position: relative;
+}
+
+#drop:hover #menu{
+    display: block;
+}
+
+#submenu{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    top: 74%;
+    left: -204px;
+    background-color: white;
+    color: black;
+    width: 100%;
+    border: 2px solid rgba(170, 168, 168, 0.835);
+    border-radius: 6px;
+    display: none;
+}
+
+#Sub:hover #submenu{
+    display: block;
+}
+
+/* *--------------------------------Alpha Section------------------------------------------------- */
+
+#Alpha{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6.5rem;
+    /* color: white; */
+    /* margin-top: 2rem; */
+    /* * in easy way  */
+    /* text-align: center; */
+
+
+}
+#Alpha > h3{
+    color: white;
+    font-size: 3.7rem;
+    font-weight: 300;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+#Alpha > p{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-bottom: 2rem;
+}
+
+#Alpha-buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* background-color: red; */
+    
+}
+
+#Alpha-buttons > button{
+    width: 14%;
+    height: 3.5rem;
+    border-radius: 5px;
+    border: none;
+    margin: 0.5rem;
+    border: 2px solid white;
+    font-size: 1.3rem;
+}
+
+#Alpha-buttons1{
+    background-color: white;
+    color: gray;
+}
+
+#Alpha-buttons2{
+    background-color: transparent;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+/* *--------------------------------Mobile Section--------------------------------------------------- */
+
+#mobile{
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    border-radius: 7px;
+    padding-top: 1rem;
+    margin-top: 8.3rem;
+    
+}
+
+#mobile > h2{
+    color: rgb(108,108,108);
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 2rem;
+}
+
+#mobile > hr{
+    width: 75%;
+}
+
+#mobile p{
+    color: rgb(108,108,108);
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 2rem;
+    margin-top: 0px;
+}
+
+#mobile > img{
+    width: 100%;
+}
+
+
+/* *--------------------------------SignUp Section-------------------------------- - */
+
+#signUp{
+    background-color: rgb(232,153,128);
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 8rem;
+}
+
+#signUp > h2{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: rgb(249,229,222);
+    padding-top: 5rem;
+    margin: 0px;
+}
+
+
+#signUp > p{
+    font-size: 1.2rem;
+    color: rgb(249,229,222);
+    font-weight: 200;
+    margin-bottom: 2.5rem;
+}
+
+#signUp > input{
+    width: 18%;
+    height: 2rem;
+    padding: 0.7rem 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(249,229,222);
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 4rem;
+    font-size: 1.2rem;
+    padding-left: 0.7rem;
+    
+}
+
+#signUp > input::placeholder{
+    color: rgb(249,229,222);
+}
+
+/* * here I am getting the error that I cannot able to active the content to get the border when user type in the input */
+
+
+#signUp > input:active{
+    border: 2px solid white;
+}
+
+#signUp > button{
+    height: 3.5rem;
+    width: 10%;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.2rem;
+    background-color: white;
+    color: rgb(232,153,128);
+    margin-left: 1rem;
+    /* padding: 0.7rem 2rem; */
+}
+
+
+/* * ---------------------------------Icons Section ---------------------------- */
+
+#icons{
+    width: 70%;
+    margin: auto;
+    /* *you can do it in the below manner also for the margin  */
+    margin: 2.5rem auto auto auto;
+    background-color: white;
+    margin-top: 2.5rem;
+    border-radius: 7px;
+    padding: 2rem;
+    box-sizing: border-box;
+    
+}
+
+#icons > div{
+    width: 48%;
+    display: inline-block;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+
+
+.fa-bolt-lightning{
+    font-size: 3rem;
+    /* margin-top: 2rem; */
+    background-color: rgb(232,153,128);
+    color: white;
+    padding: 2rem 2.2rem 2rem 2.2rem ;
+    border-radius: 100%;
+   
+}
+
+.fa-chart-area{
+    font-size: 3rem;
+    /* margin-top: 2rem; */
+    background-color: rgb(127,205,184);
+    color: white;
+    padding: 2rem 2.2rem 2rem 2.2rem ;
+    border-radius: 100%;
+}
+
+.fa-cloud{
+    font-size: 3rem;
+    /* margin-top: 2rem; */
+    background-color: rgb(144,176,186);
+    color: white;
+    padding: 2rem 2rem 2rem 2rem ;
+    border-radius: 100%;
+}
+
+.fa-lock{
+    font-size: 3rem;
+    /* margin-top: 2rem; */
+    background-color: rgb(229,203,149);
+    color: white;
+    padding: 2rem 2.2rem 2rem 2.2rem ;
+    border-radius: 100%;
+}
+
+
+
+#div1{
+    /* background-color: aqua; */
+    border-right: 2px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
+    position: relative;
+    top: 1.8px;
+    left: 3.2px;
+}
+
+#div2{
+    /* background-color: violet; */
+}
+
+#div3{
+
+    /* background-color: purple; */
+}
+
+#div4{
+    border-top: 2px solid #e5e5e5;
+    border-left: 2px solid #e5e5e5;
+    /* background-color: magenta; */
+}
+
+
+#div1 > h2{
+    font-size: 2.3rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.481);
+}
+
+#div1 > p{
+    line-height: 2rem;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 200;
+}
+
+
+#div2 > h2{
+    font-size: 2.3rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.481);
+}
+
+#div2 > p{
+    line-height: 2rem;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 200;
+}
+
+
+#div3 > h2{
+    font-size: 2.3rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.481);
+}
+
+#div3 > p{
+    line-height: 2rem;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 200;
+}
+
+
+
+
+#div4 > h2{
+    font-size: 2.3rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.481);
+}
+
+#div4 > p{
+    line-height: 2rem;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 200;
+}
+
+
+/* *-------------------------------Cards Section--------------------------------  */
+#cards{
+    display: flex;
+    width: 70%;
+    margin: 3rem auto auto auto;
+    text-align: center;
+    justify-content: space-between;
+   
+}
+
+#cards > div > img{
+    width: 100%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+
+}
+
+#cards > div{
+    width: 48%;
+    border-radius: 7px;
+    background-color: #ffffff;
+}
+
+
+
+#cards-1 > h2{
+    font-size: 2.3rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.481);
+}
+
+#cards-1 > p{
+    line-height: 2rem;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 200;
+}
+
+
+
+#cards-2 > h2{
+    font-size: 2.3rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.481);
+}
+
+#cards-2 > p{
+    line-height: 2rem;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 200;
+}
+
+#cards > div > button{
+    width: 30%;
+    font-size: 1rem;
+    padding: 0.8rem 1rem 0.8rem 1rem;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: 2px solid rgba(128, 128, 128, 0.68);
+    color: rgba(0, 0, 0, 0.652);
+    border-radius: 7px;
+}
+
+
+
+
+/* * --------------------------------footer -------------------------------------- */
+/* Now Designing the footer  */
+footer{
+    padding: 4em 0 6em 0;
+    text-align: center;
+}
+footer #footer-1{
+    /* I want the all the list iteams in one line  */
+
+    list-style-type: none;
+    /* display: inline; */
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    /* background-color: red; */
+    
+}
+
+footer #footer-1 a{
+    /* to change the all logo color  */
+    color: gray;
+}
+
+
+/* now the access the second ul  */
+footer #footer-2{
+    /* remove the bullet points  */
+    list-style-type: none;
+    /* because a is the block level element and ul also  */
+    /* so now I want each should come in single line  */
+
+    display: flex;
+    justify-content: center;
+
+    gap: 20px;
+}
+
+footer #footer-2 a{
+
+    /* to change the underline type  */
+    text-decoration: dashed;
+}
+
+/* now to increase the size of the each icon */
+footer #footer-1 .fa-brands{
+
+    color: rgba(128, 128, 128, 0.571);
+    font-size: 1.5rem;  /*this will increase the size of  the any icon */
+}
+
+footer #footer-1 .fa-solid{
+    color: red;    color: rgba(128, 128, 128, 0.571);
+        
+    font-size: 1.5rem;  /*this will increase the size of  the any icon */
+}
+
+
+
+/* *--------------------------------------------Extra CSS ------------------------------------------------------- */
+
+
+
+/* *adding the one sidebar  */
+#box{
+    padding: 0px;
+    margin: 0px;
+
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* * ---------------------------------Mobile Version ----------------------------*/
+
+@media (max-width : 600px){
+
+    body{
+
+        /* ! it will cover the background image to that particular section  */
+        background-size: 180%;
+
+        /** I have to adjust the position for mobile then for the horizontally I have to make it as the center */
+        background-position-x: center;
+
+    }
+
+    #box{
+        display: inline-block;
+        padding: 0.3rem 1.3rem;
+        border: 2px solid rgba(255, 255, 255, 0.043);
+        color: white;
+        background-color: rgba(255, 255, 255, 0.285);
+        font-size: 1rem;
+        border-radius: 7px;
+        margin-left: 0.7rem;
+        margin-top: 0.7rem;
+        box-sizing: border-box;
+    }
+
+    nav{
+        display: none;
+    }
+
+    #Alpha{
+        width: 80%;
+        margin: auto;
+        margin-top: 0rem;
+        text-align: center;
+    }
+
+    #Alpha > h3{
+
+        font-size: 2rem;
+
+    }
+    
+    #Alpha > p{
+        font-size: 1.1rem;
+    }
+
+    #Alpha-buttons{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    #Alpha-buttons > button{
+        width: 100%;
+        height: 2.8rem;
+        font-size: 1rem;
+
+    }
+
+    #Alpha-buttons > button{
+        width: 100%;
+        height: 2.8rem;
+        font-size: 1rem;
+
+    }
+
+    #Alpha-buttons2{
+        margin-bottom: 2rem;
+    }
+
+
+
+/* *--------------------------------Mobile Section--------------------------------------------------- */
+
+    #mobile{
+
+        width: 100%;
+        text-align: center;
+        border-radius: 0px;
+        padding-top: 0.5rem;
+        margin-top: 0px;
+        
+    }
+
+    #mobile > h2{
+
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    #mobile > hr{
+        width: 85%;
+    }
+
+    #mobile p{
+
+        font-size: 1.2rem;
+        padding: 1rem;
+        margin-top: 0px;
+    }
+
+    #mobile > img{
+        width: 100%;
+    }
+
+    /* ! break tag I do not want hence display none */
+    br{
+        display: none;
+    }
+
+
+    /* *--------------------Icons Section ----------------------- */
+
+
+    #icons{
+        width: 100%;
+        /* *you can do it in the below manner also for the margin  */
+        margin: 1rem auto auto auto;
+        
+    }
+
+
+    #icons > div{
+        width: 100%;
+        padding-top: 2rem;
+        border-bottom: 2px solid #e5e5e5;
+    }
+
+
+
+
+    #div1{
+        /* background-color: aqua; */
+        border-right: none;
+        border-bottom: none;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+
+    
+    #div4{
+        border-top: none;
+        border-left: none;
+    }
+
+
+
+    /* *-------------------------------Cards Section--------------------------------  */
+    #cards{
+
+        width: 100%;
+        margin: 1rem auto auto auto;
+        display: flex;
+        flex-direction: column;
+        
+    
+    }
+
+
+
+    #cards > div{
+        width: 100%;
+        border-radius: 7px;
+        margin-top: 2rem;
+    }
+
+
+    #cards > div > button{
+        width: 90%;
+        font-size: 1rem;
+        padding: 1rem 2rem 1rem 2rem;
+        background-color: white;
+        border-radius: 7px;
+        color:  #8692a6;
+        border-radius: 2px solid  #8692a6;
+    }
+
+
+
+
+
+    
+/* *--------------------------------SignUp Mobile Section-------------------------------- - */
+
+#signUp{
+    width: 100%;
+    height: 20rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0rem;
+}
+
+#signUp > h2{
+    font-size: 1.7rem;
+    padding-top: 2.5rem;
+}
+
+
+#signUp > p{
+    font-size: 0.9rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+#signUp > input{
+    width: 75%;
+    margin-left: 1.2rem;
+    margin-bottom: 0px;
+    height: 1.5rem;
+    
+}
+
+
+
+#signUp > button{
+    width: 86%;
+    margin-left: 2.4rem;
+    margin-top: 1rem;
+    display: block;
+    height: 2.5rem;
+}
+
+
+
+
+
+
+/* * --------------------------------footer Mobile Section  -------------------------------------- */
+
+
+
+
+/* now the access the second ul  */
+footer #footer-2{
+    /* remove the bullet points  */
+    list-style-type: none;
+    /* because a is the block level element and ul also  */
+    /* so now I want each should come in single line  */
+
+    display: block;
+    justify-content: center;
+
+    line-height: 1.7rem;
+}
+
+footer #footer-2 a{
+
+    /* to change the underline type  */
+    text-decoration: dashed;
+}
+
+/* now to increase the size of the each icon */
+footer #footer-1 .fa-brands{
+
+    color: rgba(128, 128, 128, 0.571);
+    font-size: 1.5rem;  /*this will increase the size of  the any icon */
+}
+
+footer #footer-1 .fa-solid{
+    color: red;    color: rgba(128, 128, 128, 0.571);
+        
+    font-size: 1.5rem;  /*this will increase the size of  the any icon */
+}
+
+
+}
+
+
+
+
+/* !======================================== For tablet ========================== */
+
+
+
+
+
+
+
